@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spellbuild: Buy</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+</head>
+<body>
+    
+    <div class="logo">
+        <img src="imgs/logo2.png" alt="" width="140px" height="110px">
+    </div>
+
+    
+    <div id="nav-bar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Media.html">Media</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="Community.html">Community</a></li>
+        <li><a href="Buy.html">Buy</a></li>
+    </div> 
+    
+
+    <div id="description">
+        <h2>Thanks for your interest in joining the beta!</h2>
+        <p id="buyDesc">
+            To start your journey in Spellbuild, you have to register your 
+            account and pick your payment type. Please fill the following form:
+        </p>
+            <form name="myForm" action="Confirmation.html" method="POST">
+                <div>
+                <label>Full Name : </label> <br>
+                <input type="text" name="Name" placeholder="Full Name" id="fName">
+                <span></span>
+                </div>
+
+                <div>
+                <label>Email : </label> <br>
+                <input type="email" name="" placeholder="Email" id="email"> 
+                <span></span>
+                </div>
+
+                <div>
+                <label>Username : </label> <br>
+                <input type="text" name="" placeholder="Username" id="uname"> 
+                <span id="errorUsername"></span>
+                </div>
+
+                <div>
+                <label>Password : </label> <br>
+                <input type="password" name="" placeholder="Password" id="pass"> 
+                <span></span>
+                </div>
+
+                <div>
+                <label>Confirm Password : </label> <br>
+                <input type="password" name="" placeholder="Confirm Password" id="cPass"> 
+                <span></span>
+                </div>
+
+                <div>
+                <label>Gender : </label> <br>
+                <input type="radio" id="male" name="gender" value="male" >
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                </div>
+
+                <div>
+                <label for="quantity">Quantity : </label> <br>
+                <input type="number" id="quantity" name="quantity" min="1"> 
+                <span></span>
+                </div>
+
+                <div>
+                <label>Address : </label><br> 
+                <input type="text" name="" placeholder="Address" id="address"> 
+                <span></span>
+                </div>
+
+                <div>
+                <label>Agreement : </label> <br>
+                <input type="checkbox" name="" placeholder="Agreement" id="agreement"> 
+                <label for="">I agree to receive emails that contains news from Spellbuild</label>
+                <span></span>
+                </div>
+
+                <br><br>
+
+                <button type="submit" id="btn-submit">Submit</button>
+            </form>
+    </div>
+
+    
+    
+    <div id="footer">
+        <p>
+            Spellbuild &copy; 2020
+        </p>
+    </div>
+</body>
+<script src="js/validasi.js" ></script>
+</html>
